@@ -6,10 +6,10 @@ const { KYCAgeCredential } = require("./vcHelpers/KYCAgeCredential");
 const humanReadableAuthReason = "Must be born before this year";
 
 const credentialSubject = {
-  birthday: {
+  userid: {
     // users must be born before this year
     // birthday is less than Jan 1, 2023
-    $lt: 20230101,
+    $eq: "1998",
   },
 };
 
